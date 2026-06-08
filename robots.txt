@@ -89,10 +89,6 @@ User-agent: ChatGPT-User
 Disallow:
 Allow: /
 
-User-agent: ChatGPT-Ex勝
-Disallow:
-Allow: /
-
 User-agent: ClaudeBot
 Disallow:
 Allow: /
@@ -145,7 +141,6 @@ User-agent: diffbot
 Disallow:
 Allow: /
 
-User-agent:元
 
 Sitemap: https://obaid.digital/sitemap.xml
 Host: https://obaid.digital

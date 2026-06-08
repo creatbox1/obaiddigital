@@ -2725,3 +2725,29 @@ body::-webkit-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 42, 42, 0.5) rgba(255, 255, 255, 0.05);
 }
+
+.footer-links {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.footer-links .footer-link {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+}
+
+.footer-links .footer-link:hover {
+    color: #ff2a2a;
+    text-decoration: none;
+}
+
+.footer-sep {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+}
