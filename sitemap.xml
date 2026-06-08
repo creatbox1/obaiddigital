@@ -7,7 +7,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://obaid.digital/</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://obaid.digital/"/>
@@ -15,43 +15,43 @@
     </url>
     <url>
         <loc>https://obaid.digital/#services</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#monetization</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#tech</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#pricing</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#faq</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#contact</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://obaid.digital/#why-us</loc>
-        <lastmod>2026-04-20</lastmod>
+        <lastmod>2026-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
