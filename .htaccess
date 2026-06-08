@@ -13,6 +13,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.obaid\.digital [NC]
 RewriteRule ^(.*)$ https://obaid.digital/$1 [L,R=301]
 
+# --- REDIRECT /index.html TO ROOT ---
+RewriteRule ^index\.html$ / [L,R=301]
+
 # --- DEFAULT INDEX FILE ---
 DirectoryIndex index.html index.htm
 
