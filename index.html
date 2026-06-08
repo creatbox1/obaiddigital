@@ -31,6 +31,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://obaid.digital/">
     
+    <!-- Preload LCP images -->
+    <link rel="preload" as="image" href="img/html.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="img/react.webp" type="image/webp" fetchpriority="high">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="apple-touch-icon" href="img/favicon.svg">
@@ -134,7 +138,10 @@
     <meta name="google-adsense-account" content="ca-pub-YOUR_ADSENSE_CODE">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNGN7X78P8"></script>
@@ -142,12 +149,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-JNGN7X78P8');
     </script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
 </head>
 <body>
     <div class="cursor-smoke"></div>
@@ -192,7 +197,7 @@
     </div>
 
     <a href="https://wa.me/447873172043" target="_blank" class="whatsapp-float">
-        <img src="img/whatspp.png" alt="WhatsApp" width="36" height="36" style="object-fit: contain;">
+        <picture><source srcset="img/whatspp.webp" type="image/webp"><img src="img/whatspp.png" alt="WhatsApp" width="36" height="36" style="object-fit: contain;" loading="lazy"></picture>
     </a>
 
     <a href="#hero" class="site-logo">
@@ -219,22 +224,22 @@
         </div>
         <div class="hero-right" id="heroCards">
             <div class="floating-card">
-                <img src="img/html.png" alt="HTML" width="70" height="70">
+                <picture><source srcset="img/html.webp" type="image/webp"><img src="img/html.png" alt="HTML" width="70" height="70" loading="lazy"></picture>
             </div>
             <div class="floating-card">
-                <img src="img/CSS.png" alt="CSS" width="70" height="70">
+                <picture><source srcset="img/CSS.webp" type="image/webp"><img src="img/CSS.png" alt="CSS" width="70" height="70" loading="lazy"></picture>
             </div>
             <div class="floating-card">
-                <img src="img/js.png" alt="JavaScript" width="70" height="70">
+                <picture><source srcset="img/js.webp" type="image/webp"><img src="img/js.png" alt="JavaScript" width="70" height="70" loading="lazy"></picture>
             </div>
             <div class="floating-card">
-                <img src="img/react.png" alt="React" width="70" height="70">
+                <picture><source srcset="img/react.webp" type="image/webp"><img src="img/react.png" alt="React" width="70" height="70" loading="lazy"></picture>
             </div>
             <div class="floating-card">
-                <img src="img/node.png" alt="Node.js" width="70" height="70">
+                <picture><source srcset="img/node.webp" type="image/webp"><img src="img/node.png" alt="Node.js" width="70" height="70" loading="lazy"></picture>
             </div>
             <div class="floating-card">
-                <img src="img/py.png" alt="Python" width="70" height="70">
+                <picture><source srcset="img/py.webp" type="image/webp"><img src="img/py.png" alt="Python" width="70" height="70" loading="lazy"></picture>
             </div>
         </div>
     </section>
@@ -786,10 +791,10 @@
         </div>
         <div class="social-icons-container fade-up">
             <a href="https://www.facebook.com/obaid.digital" target="_blank" class="social-icon fb-icon">
-                <img src="img/fb.png" alt="Facebook" width="28" height="28">
+                <picture><source srcset="img/fb.webp" type="image/webp"><img src="img/fb.png" alt="Facebook" width="28" height="28" loading="lazy"></picture>
             </a>
             <a href="mailto:support@obaid.digital" class="social-icon email-icon">
-                <img src="img/email.png" alt="Email" width="28" height="28">
+                <picture><source srcset="img/email.webp" type="image/webp"><img src="img/email.png" alt="Email" width="28" height="28" loading="lazy"></picture>
             </a>
         </div>
     </section>
@@ -1009,5 +1014,8 @@
             <p class="footer-text">&copy; 2026 <a href="https://obaid.digital" target="_blank" class="footer-link">OBAID DIGITAL</a>. All rights reserved.</p>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="js/main.min.js"></script>
 </body>
 </html>
