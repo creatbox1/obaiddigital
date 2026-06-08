@@ -1,0 +1,152 @@
+# robots.txt - Search Engine & AI Bot Access
+# https://obaid.digital/
+
+User-agent: *
+Disallow: /404.html
+Allow: /
+
+User-agent: Googlebot
+Disallow:
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow:
+Allow: /
+
+User-agent: Googlebot-Mobile
+Disallow:
+Allow: /
+
+User-agent: Googlebot-News
+Disallow:
+Allow: /
+
+User-agent: Bingbot
+Disallow:
+Allow: /
+
+User-agent: BingPreview
+Disallow:
+Allow: /
+
+User-agent: Slurp
+Disallow:
+Allow: /
+
+User-agent: DuckDuckBot
+Disallow:
+Allow: /
+
+User-agent: Yandex
+Disallow:
+Allow: /
+
+User-agent: Baiduspider
+Disallow:
+Allow: /
+
+User-agent: Sogou web spider
+Disallow:
+Allow: /
+
+User-agent: Exabot
+Disallow:
+Allow: /
+
+User-agent: Facebookexternalhit
+Disallow:
+Allow: /
+
+User-agent: Twitterbot
+Disallow:
+Allow: /
+
+User-agent: Applebot
+Disallow:
+Allow: /
+
+User-agent: AhrefsBot
+Disallow:
+Allow: /
+
+User-agent: SemrushBot
+Disallow:
+Allow: /
+
+User-agent: MJ12bot
+Disallow:
+Allow: /
+
+User-agent: DotBot
+Disallow:
+Allow: /
+
+User-agent: GPTBot
+Disallow:
+Allow: /
+
+User-agent: ChatGPT-User
+Disallow:
+Allow: /
+
+User-agent: ChatGPT-Ex勝
+Disallow:
+Allow: /
+
+User-agent: ClaudeBot
+Disallow:
+Allow: /
+
+User-agent: Claude-Web
+Disallow:
+Allow: /
+
+User-agent: Google-Extended
+Disallow:
+Allow: /
+
+User-agent: GPTBot-Worker
+Disallow:
+Allow: /
+
+User-agent: AN-102-169-Xi
+Disallow:
+Allow: /
+
+User-agent: COVANT-MTE9-NjUu
+Disallow:
+Allow: /
+
+User-agent: Amazonbot
+Disallow:
+Allow: /
+
+User-agent: OAI-SearchBot
+Disallow:
+Allow: /
+
+User-agent: GoogleOther
+Disallow:
+Allow: /
+
+User-agent: GoogleOther-Agent
+Disallow:
+Allow: /
+
+User-agent: anthropic-ai
+Disallow:
+Allow: /
+
+User-agent: Bytespider
+Disallow:
+Allow: /
+
+User-agent: diffbot
+Disallow:
+Allow: /
+
+User-agent:元
+
+Sitemap: https://obaid.digital/sitemap.xml
+Host: https://obaid.digital
+Crawl-delay: 0

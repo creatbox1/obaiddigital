@@ -1,0 +1,138 @@
+Upgrade the "Technologies We Use" section while STRICTLY preserving the existing website's design system, styles, and UI consistency.
+
+========================
+CRITICAL INSTRUCTIONS (VERY IMPORTANT)
+========================
+
+- DO NOT change the global design style
+- DO NOT introduce new colors
+- DO NOT change fonts, spacing system, or UI theme
+- DO NOT override existing CSS classes
+- FOLLOW the current website’s:
+  - Color palette
+  - Typography
+  - Button styles
+  - Border radius
+  - Shadow and glow styles
+  - Animation style
+
+This section must look like it was originally part of the same website.
+
+========================
+STYLE INHERITANCE
+========================
+
+- Reuse existing CSS variables (colors, gradients)
+- Reuse existing components (cards, buttons, containers)
+- Match spacing (padding, margins) with other sections
+- Match animation timing and easing already used in site
+
+If the site uses:
+- Glassmorphism → keep it
+- Neon glow → keep same intensity
+- Minimal UI → do not overdesign
+
+========================
+SECTION GOAL
+========================
+
+Enhance the section visually and interactively WITHOUT breaking design consistency.
+
+========================
+CONTENT (KEEP CLEAN & MATCH TONE)
+========================
+
+Heading:
+Technologies We Use
+
+Subheading:
+Modern tools powering our digital solutions
+
+Short Description:
+We use industry-leading technologies to build scalable, high-performance, and future-ready digital products.
+
+========================
+LAYOUT (MATCH EXISTING GRID SYSTEM)
+========================
+
+- Use same container width as other sections
+- Follow same grid system (2 column or centered layout depending on site)
+
+Option A (Preferred if site is minimal):
+- Centered layout with tech cards
+
+Option B (If site supports visuals):
+- Left: Text
+- Right: Tech visual (but subtle, not overpowering)
+
+========================
+TECH DISPLAY (IMPORTANT)
+========================
+
+Show technologies:
+
+- Python
+- Node.js
+- React
+- JavaScript
+- Next.js
+- MongoDB
+- Firebase
+- AWS
+- Docker
+
+Display style:
+- Use same card style already used in Services or Portfolio section
+- Each tech item:
+  - Icon (SVG preferred)
+  - Name
+  - Optional short label
+
+========================
+ANIMATIONS (KEEP CONSISTENT)
+========================
+
+- Use SAME animation style as rest of website
+- If site uses:
+  - Fade-in → use fade-in
+  - Slide-up → use slide-up
+
+DO NOT add heavy or new animation styles
+
+Allowed:
+- Subtle hover glow
+- Slight scale on hover
+- Smooth transitions (0.3s–0.4s)
+
+Avoid:
+- Heavy 3D effects
+- Overuse of particles
+- Complex motion if not used elsewhere
+
+========================
+INTERACTIVITY
+========================
+
+- Hover → slight highlight
+- Optional tooltip (only if matches site style)
+
+========================
+PERFORMANCE
+========================
+
+- Use lightweight animations
+- Use SVG icons
+- Keep DOM clean
+- Ensure fast loading
+
+========================
+FINAL OUTPUT
+========================
+
+- Clean HTML + CSS (or React component)
+- Fully responsive
+- Visually upgraded but stylistically identical to rest of site
+
+IMPORTANT:
+This is an enhancement, NOT a redesign.
+The section must blend seamlessly with the existing website.

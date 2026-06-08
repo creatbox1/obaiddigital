@@ -1,0 +1,194 @@
+You are a senior frontend developer (10+ years) and award-winning UI/UX designer.
+
+Create an ultra premium, futuristic 2026-style dark SaaS website for a Web Design & Development Agency.
+
+DESIGN STYLE (VERY IMPORTANT):
+
+- Dark cosmic background (black + deep red gradient)
+- Use glowing red neon accents throughout the UI
+- Subtle particle/dust effect background (space-like)
+- Soft radial gradients + light streaks
+- Glassmorphism + neumorphism hybrid UI
+- Borders should glow with red neon (not flat)
+- Use blur, transparency, and layered depth
+- UI must feel like Awwwards-level + Apple-quality
+
+LAYOUT:
+
+- Full-width layout
+- Left side vertical sticky navbar (VERY IMPORTANT)
+  - Only icons (no text)
+  - Rounded container with neon border
+  - Active icon highlighted with glow
+  - Tooltip on hover
+  - Slight inner shadow + glass effect
+
+TOP NAVBAR (RIGHT SIDE):
+- Minimal horizontal nav (Home, Services, Portfolio, Pricing, Contact)
+- Small icons on right side (theme toggle, settings style icons)
+
+---
+
+HOMEPAGE STRUCTURE:
+
+1. HERO SECTION (2 COLUMN GRID):
+
+LEFT:
+- Large bold heading:
+  "We Build Ultra Premium Digital Experiences"
+- Subheading with low opacity white text
+- 2 CTA buttons:
+  - Primary: glowing red button (filled)
+  - Secondary: outlined neon button
+- Buttons should have hover glow + slight scale
+
+RIGHT:
+- Floating 3D tech icons/cards (IMPORTANT)
+  - Icons inside rounded square containers
+  - Each card has neon red border glow
+  - Floating in random positions
+  - Technologies: HTML, CSS, JS, React, Node.js, Python
+- Add:
+  - floating animation (slow)
+  - parallax movement on mouse
+  - soft shadow + depth
+
+BACKGROUND:
+- Light streak curves (red wave lines)
+- Particle/dots texture
+
+---
+
+2. SERVICES SECTION:
+
+- Title: "What We Offer"
+- Grid: 3x2 cards (6 total)
+
+CARD DESIGN:
+- Rounded rectangle
+- Glass background (blur + transparency)
+- Red neon border glow
+- Inside:
+  - Icon (inside glowing hexagon or circle)
+  - Title
+  - Small description text
+
+HOVER EFFECT:
+- Card lifts slightly
+- Glow intensifies
+- Background becomes slightly brighter
+
+---
+
+3. TECHNOLOGY STACK:
+
+- Title: "Technologies We Use"
+- Horizontal strip layout
+- Logos: Python, Node.js, React, Next.js, Tailwind
+- Style:
+  - Dim white logos
+  - On hover: glow + color highlight
+- Add subtle scrolling marquee OR fade animation
+
+RIGHT SIDE:
+- Add angled 3D dashboard mockup image (like layered screens)
+
+---
+
+4. PRICING SECTION:
+
+- Title: "Pricing Plans"
+- 4 cards in one row:
+  Starter ($499)
+  Professional ($799) [FEATURED]
+  Business ($1199)
+  Enterprise ($1599)
+
+CARD STYLE:
+- Glass + neon border
+- Featured card:
+  - Bigger scale
+  - Strong glow
+  - "Popular" badge
+
+INSIDE:
+- Price large
+- Feature list with dots/icons
+- CTA: "Contact Us"
+
+HOVER:
+- Slight scale + glow increase
+
+---
+
+5. WHY CHOOSE US:
+
+- 4 icon-based features in row:
+  - Fast Delivery
+  - Modern Technologies
+  - SEO Optimized
+  - Scalable Systems
+
+STYLE:
+- Minimal icons
+- Soft glow
+- Clean spacing
+
+---
+
+ANIMATIONS (VERY IMPORTANT):
+
+- Use GSAP or Framer Motion
+- Smooth fade-up animations on scroll
+- Floating animation for hero icons
+- Parallax mouse movement
+- Button hover glow pulse
+- Card hover elevation
+
+---
+
+TYPOGRAPHY:
+
+- Clean modern font (Poppins / Inter)
+- Heading: bold, white
+- Subtext: light gray
+- Proper spacing (very important for premium feel)
+
+---
+
+COLORS:
+
+- Background: #0a0a0a to dark red gradient
+- Primary: Neon Red (#ff2a2a or similar)
+- Secondary: Soft white / gray
+- Glow: rgba(255, 0, 0, 0.6)
+
+---
+
+TECH STACK:
+
+- Tailwind CSS
+- GSAP or Framer Motion
+- Fully responsive
+- Clean semantic HTML
+- SEO optimized
+
+---
+
+IMPORTANT:
+
+- This is NOT an e-commerce website
+- No checkout system
+- All buttons → scroll to contact section
+- Focus on visual experience + premium feel
+
+---
+
+GOAL:
+
+The design must feel:
+- Futuristic
+- Premium
+- High-end agency level
+- Visually immersive
+- Slightly 3D and alive (not flat)

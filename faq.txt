@@ -1,0 +1,53 @@
+1. What services do you offer?
+We provide a wide range of digital solutions including web development, UI/UX design, mobile app development, eCommerce solutions, AI automation, Web3 applications, and digital marketing services.
+
+2. Do you build custom websites or use templates?
+We specialize in fully custom-built websites tailored to your business needs, ensuring unique design, high performance, and scalability.
+
+3. How long does it take to build a website?
+Project timelines depend on complexity, but most websites are completed within 1–4 weeks.
+
+4. Do you offer mobile app development?
+Yes, we develop high-performance mobile applications for both Android and iOS platforms with modern UI and smooth functionality.
+
+5. Can you help with Google AdSense approval?
+Yes, we build and optimize websites following best practices and policy guidelines to improve the chances of AdSense approval.
+
+6. Do you work with international clients?
+Yes, we work with clients globally including the United States, United Kingdom, Canada, and other regions.
+
+7. What technologies do you use?
+We use modern technologies such as React, Node.js, Python, Next.js, MongoDB, Firebase, AWS, and other scalable tools.
+
+8. Do you provide SEO and digital marketing services?
+Yes, we offer SEO optimization, digital marketing strategies, and analytics to help grow your online presence.
+
+9. Can you build eCommerce websites?
+Absolutely. We create scalable and secure eCommerce platforms with payment integration and user-friendly design.
+
+10. What is your development process?
+Our process includes research, planning, design, development, testing, and final deployment to ensure high-quality results.
+
+11. Do you offer AI automation services?
+Yes, we build AI-powered automation systems to streamline workflows and improve business efficiency.
+
+12. Can you develop Web3 or blockchain applications?
+Yes, we develop decentralized applications (DApps), smart contracts, and blockchain-based systems.
+
+13. Will my website be mobile-friendly?
+Yes, all our websites are fully responsive and optimized for mobile, tablet, and desktop devices.
+
+14. Do you provide ongoing support?
+Yes, we offer maintenance, updates, and support services after project delivery.
+
+15. How much does a website cost?
+The cost depends on your requirements such as features, number of pages, and overall complexity. We offer solutions for landing pages, business websites, eCommerce stores, and blogs at competitive pricing.
+
+16. Do you offer custom pricing or packages?
+Yes, we provide flexible pricing tailored to your project needs. You can contact us for a custom quote based on your exact requirements.
+
+17. Do you offer discounts or special deals?
+Yes, we occasionally offer discounts for startups, long-term projects, and bundled services. Contact us to get the best value for your project.
+
+18. How can I get started?
+You can contact us through our website, and our team will guide you through the process step by step.

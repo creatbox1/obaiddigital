@@ -1,0 +1,202 @@
+# ==================================================
+# OBAID DIGITAL - .htaccess Configuration
+# Optimized for SEO, Speed, Security & AI Indexing
+# ==================================================
+
+# --- ENFORCE HTTPS (Uncomment if using SSL) ---
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- WWW to Non-WWW Redirect ---
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.obaid\.digital [NC]
+RewriteRule ^(.*)$ https://obaid.digital/$1 [L,R=301]
+
+# --- DEFAULT INDEX FILE ---
+DirectoryIndex index.html index.htm
+
+# --- SEO OPTIMIZATIONS ---
+
+# Canonical URL Header
+<IfModule mod_headers.c>
+    Header set Link "<https://obaid.digital/>; rel=\"canonical\""
+</IfModule>
+
+# --- CORS HEADERS ---
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, X-Requested-With"
+</IfModule>
+
+# --- SECURITY HEADERS ---
+<IfModule mod_headers.c>
+    # X-Frame-Options
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # X-Content-Type-Options
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # X-XSS-Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Referrer-Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions-Policy
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Strict-Transport-Security (Uncomment after SSL setup)
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    
+    # Content-Security-Policy
+    Header always set Content-Security-Policy "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+</IfModule>
+
+# --- FILE CACHING (Speed Optimization) ---
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Video
+    ExpiresByType video/mp4 "access plus 1 year"
+    ExpiresByType video/mpeg "access plus 1 year"
+    ExpiresByType video/webm "access plus 1 year"
+    
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/eot "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    
+    # HTML - Always revalidate
+    ExpiresByType text/html "access plus 0 seconds"
+    
+    # Default
+    ExpiresDefault "access plus 1 month"
+</IfModule>
+
+# --- GZIP COMPRESSION ---
+<IfModule mod_deflate.c>
+    # Enable compression
+    SetOutputFilter DEFLATE
+    
+    # Compress HTML, CSS, JavaScript, Text, XML, fonts
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/x-javascript application/font-ttf application/x-font-otf image/svg+xml application/vnd.ms-fontobject application/x-font-ttf application/x-font-woff application/x-font-woff2
+    
+    # Exclude compression for certain browsers
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    
+    # Set compression level
+    DeflateCompressionLevel 9
+</IfModule>
+
+# --- ETags ---
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
+
+# --- BROWSER CACHING ---
+<IfModule mod_headers.c>
+    <filesMatch "\.(ico|jpg|jpeg|png|gif|svg|webp|js|css|woff|woff2|ttf|eot|otf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </filesMatch>
+    
+    <filesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+    </filesMatch>
+</IfModule>
+
+# --- PREVENT HOTLINKING ---
+# Uncomment to enable
+# RewriteEngine on
+# RewriteCond %{HTTP_REFERER} !^$
+# RewriteCond %{HTTP_REFERER} !^https://(www\.)?obaid\.digital/ [NC]
+# RewriteCond %{HTTP_REFERER} !^https://(www\.)?google\.com/ [NC]
+# RewriteRule \.(jpg|jpeg|png|gif|svg|webp)$ - [F]
+
+# --- SEARCH ENGINE & AI BOT DIRECTIVES ---
+
+# Allow all crawlers
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase User-Agent "^Googlebot" allow_bot
+    SetEnvIfNoCase User-Agent "^Bingbot" allow_bot
+    SetEnvIfNoCase User-Agent "^GPTBot" allow_bot
+    SetEnvIfNoCase User-Agent "^ChatGPT" allow_bot
+    SetEnvIfNoCase User-Agent "^ClaudeBot" allow_bot
+    SetEnvIfNoCase User-Agent "^anthropic" allow_bot
+    SetEnvIfNoCase User-Agent "^Yandex" allow_bot
+    SetEnvIfNoCase User-Agent "^Baiduspider" allow_bot
+    SetEnvIfNoCase User-Agent "^Twitterbot" allow_bot
+    SetEnvIfNoCase User-Agent "^Facebookexternalhit" allow_bot
+    SetEnvIfNoCase User-Agent "^Applebot" allow_bot
+    SetEnvIfNoCase User-Agent "^Amazonbot" allow_bot
+    SetEnvIfNoCase User-Agent "^OAI-SearchBot" allow_bot
+    SetEnvIfNoCase User-Agent ".*" allow_bot
+    
+    Order Allow,Deny
+    Allow from all
+</IfModule>
+
+# --- INDEXING SPEED IMPROVEMENTS ---
+
+# Keep connections alive
+<IfModule mod_headers.c>
+    Header set Connection "keep-alive"
+</IfModule>
+
+# Enable HTTP/2 (if available)
+<IfModule mod_headers.c>
+    Header set X-httpd-modspdy "false"
+</IfModule>
+
+# --- PROTECT SENSITIVE FILES ---
+<FilesMatch "^\.(htaccess|htpasswd|git|env|config)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# --- PREVENT DIRECTORY LISTING ---
+Options -Indexes
+
+# --- CUSTOM ERROR PAGES ---
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 500 /404.html
+
+# --- FILE ENCODING ---
+AddDefaultCharset UTF-8
+
+# --- REMOVE TRAILING SLASHES (SEO) ---
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# --- FORCE TRAILING SLASH (Optional - comment out if not needed) ---
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+# RewriteRule ^(.*)$ $1/ [L,R=301]
+
+# ==================================================
+# END OF .HTACCESS CONFIGURATION
+# ==================================================
